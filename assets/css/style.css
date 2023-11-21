@@ -1,25 +1,28 @@
+#root{
+  display: flex;
+}
+
 .user-card {
   margin: 40px auto;
   width: 300px;
   height: 400px;
   padding: 0px 0px 30px 0px;
   border: 1px solid rgb(0, 0, 0);
-  border-radius:10px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
-.user-avatar {
+.img-wrapper {
   width: 100%;
   height: 70%;
-
 }
-img {
+.user-avatar {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius:10px;
+  border-radius: 10px;
 }
 .user-info {
   font-family: Arial, sans-serif;
@@ -27,7 +30,8 @@ img {
   font-size: 18px;
   text-align: center;
 }
-button {
+
+.follow-btn {
   border-radius: 50%;
   font-size: 25px;
   height: 50px;
@@ -35,7 +39,6 @@ button {
   border: none;
   margin-top: -12%;
   cursor: pointer;
-
 }
 
 .user-stats {
@@ -46,5 +49,19 @@ button {
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  width: 80%;
+  width: 200px;
+  font-size: 13px;
+}
+.user-stats >p{
+  width: 70px;
+}
+.user-nickname {
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 6px;
+}
+
+.user-name {
+  font-size: 20px;
+  font-weight: bold;
 }
